@@ -1,7 +1,7 @@
 import {Box, Card, Skeleton, Text} from "@mantine/core";
 import React from "react";
 import Link from "next/link";
-import {ISurah} from "../pages/interfaces";
+import {ISurah} from "../interfaces/interfaces";
 import {useWindowDimension} from "../hooks/useWindowDimension";
 
 

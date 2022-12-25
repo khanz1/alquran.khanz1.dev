@@ -3,7 +3,7 @@ import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import {GetStaticProps} from "next";
 import {SurahCard} from "../components/SurahCard";
-import {ISurah} from "./interfaces";
+import {ISurah} from "../interfaces/interfaces";
 
 
 export interface SurahInd {

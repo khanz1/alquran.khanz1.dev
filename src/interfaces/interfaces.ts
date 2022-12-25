@@ -10,7 +10,7 @@ export interface ISurah {
 }
 
 export interface IVerse {
-  surahNumber: number;
+  surahId: number;
   verse: number;
   arabic: string;
   translation: string;

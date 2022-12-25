@@ -1,5 +1,5 @@
-import {Box, Card, Image, Text } from '@mantine/core';
-import {IVerse} from "../pages/interfaces";
+import {Card, Text } from '@mantine/core';
+import {IVerse} from "../interfaces/interfaces";
 import React from "react";
 import {useWindowDimension} from "../hooks/useWindowDimension";
 

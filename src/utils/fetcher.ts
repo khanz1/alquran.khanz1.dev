@@ -6,7 +6,7 @@ export const getSurahs = async () => {
       "Accept-Encoding": "gzip, deflate, compress",
     },
   });
-  return data.map((surah) => {
+  return data.map((surah: any) => {
     return {
       name: surah.nama,
       latinName: surah.nama_latin,
@@ -46,7 +46,7 @@ export const getVerses = async (surahNumber: number) => {
     }
   );
 
-  return data.ayat.map((ayat) => {
+  return data.ayat.map((ayat: any) => {
     return {
       surahId: ayat.surah,
       verse: ayat.nomor,
@@ -67,7 +67,7 @@ export const getTafsirs = async (surahNumber: number) => {
     }
   );
 
-  return data.tafsir.map((tafsir) => {
+  return data.tafsir.map((tafsir: any) => {
     return {
       surahId: tafsir.surah,
       verseId: tafsir.ayat,
