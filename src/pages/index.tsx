@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 import {GetStaticProps} from "next";
 import {SurahCard} from "../components/SurahCard";
 import {ISurah} from "../interfaces/interfaces";
+import Script from "next/script";
 
 
 export interface SurahInd {
@@ -66,6 +67,7 @@ export default function Home({ surahList }: HomeProps) {
           Al-Quran
         </h1>
         {surahList.map((surah) => <SurahCard key={surah.number} surah={surah} />)}
+        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8708230789648540" crossOrigin="anonymous" />
       </main>
     </>
   )
